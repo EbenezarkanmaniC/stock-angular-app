@@ -1,0 +1,13 @@
+{
+  "companies": [
+    {
+      "id": "224c",
+      "companyCode": "kanmani",
+      "companyName": "Ebe",
+      "companyCeo": "Ebe",
+      "companyTurnover": 0,
+      "companyWebsite": "www.company.com",
+      "stockExchange": "NTS"
+    }
+  ]
+}

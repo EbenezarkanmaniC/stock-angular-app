@@ -1,0 +1,58 @@
+/* Center the title */
+.card-header.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Space between buttons */
+  .modal-footer button {
+    margin: 0 10px;
+  }
+  
+  /* 3D Button Style */
+  .custom-3d-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .custom-3d-btn:hover {
+    background-color: #004a9f;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .custom-3d-btn:active {
+    background-color: #003b80;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+  /* 3D effect for the card */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  

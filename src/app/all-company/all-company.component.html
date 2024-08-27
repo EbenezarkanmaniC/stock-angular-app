@@ -1,0 +1,34 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>SNo</th>
+      <th>Company Code</th>
+      <th>Company Name</th>
+      <th>Company CEO</th>
+      <th>Company Turnover</th>
+      <th>Company Website</th>
+      <th>Stock Exchange</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let company of companies; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ company.companyCode }}</td>
+      <td>{{ company.companyName }}</td>
+      <td>{{ company.companyCeo }}</td>
+      <td>{{ company.companyTurnover }}</td>
+      <td>{{ company.companyWebsite }}</td>
+      <td>{{ company.stockExchange }}</td>
+      <td>
+        <button class="btn btn-primary btn-sm" (click)="onEdit(company, editModal)">Edit</button>
+        <button class="btn btn-danger btn-sm" (click)="onDelete(company.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #editModal let-modal>
+  <app-company-form *ngIf="selectedCompany" [company]="selectedCompany" (formSubmit)="onFormSubmit($event)">
+  </app-company-form>
+</ng-template>

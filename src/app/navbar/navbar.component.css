@@ -1,0 +1,33 @@
+/* 3D Button Style */
+.custom-3d-btn {
+    background-color: #fff; /* Button background color */
+    color: #000;               /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 3D shadow */
+    transition: all 0.2s ease; /* Smooth transition */
+  }
+  
+  .custom-3d-btn:hover {
+    background-color: #e2dada; /* Slightly darker on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lift button on hover */
+  }
+  
+  .custom-3d-btn:active {
+    background-color: #d1c4c4; /* Darker on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Flatten shadow on click */
+    transform: translateY(2px); /* Push button down on click */
+  }
+  #navbarDropdownMenuLink{
+    margin-right: 20px;
+  }
+  #logo{
+    border-radius: 90%;
+  }
+  .navbar{
+    margin-bottom: 60px;
+  }
+  

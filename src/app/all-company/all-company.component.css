@@ -1,0 +1,20 @@
+.table{
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+
+/* Ensure consistent form width inside modal */
+.modal-dialog {
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
