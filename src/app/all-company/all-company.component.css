@@ -1,6 +1,7 @@
-.table{
+table{
     margin-top: 10px;
     padding: 15px 15px;
+   
 }
 
 /* Ensure consistent form width inside modal */
@@ -17,4 +18,58 @@
   .card-body {
     padding: 20px;
   }
+
+  .custom-3d-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .custom-3d-btn:hover {
+    background-color: #004a9f;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .custom-3d-btn-r:active {
+    margin-left: 10px;
+    background-color: #b31207;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+  .custom-3d-btn-r {
+    margin-left: 10px;
+    background-color: #970f05;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .custom-3d-btn-r:hover {
+    margin-left: 10px;
+    background-color: #7c0c04;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .custom-3d-btn-r:active {
+    margin-left: 10px;
+    background-color: #690a03;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+ .table thead{
+    background-color: #0056b3;
+    color: #fff;
+  }
+
   

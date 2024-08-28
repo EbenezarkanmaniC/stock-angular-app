@@ -1,13 +1,31 @@
 {
   "companies": [
     {
-      "id": "224c",
-      "companyCode": "kanmani",
-      "companyName": "Ebe",
-      "companyCeo": "Ebe",
-      "companyTurnover": 0,
-      "companyWebsite": "www.company.com",
+      "id": "0.3i6zozzkhod",
+      "companyCode": "HDFC243RS49S",
+      "companyName": "HDFC",
+      "companyCeo": "Ramasamy",
+      "companyTurnover": 9000000000,
+      "companyWebsite": "www.hdfc.com",
       "stockExchange": "NTS"
+    },
+    {
+      "id": "0.3v79wpy7fef",
+      "companyCode": "HDFC243RS48S",
+      "companyName": "HDFC",
+      "companyCeo": "Ramasamy",
+      "companyTurnover": 875400005,
+      "companyWebsite": "www.hdfc.com",
+      "stockExchange": "NTS"
+    },
+    {
+      "id": "0.zkko1u6a7ul",
+      "companyCode": "NT5623018YTDG",
+      "companyName": "Nippon",
+      "companyCeo": "Sundar",
+      "companyTurnover": 74000005633,
+      "companyWebsite": "www.nippancompany.com",
+      "stockExchange": "ETS"
     }
   ]
 }

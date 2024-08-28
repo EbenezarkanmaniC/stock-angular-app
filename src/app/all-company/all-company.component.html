@@ -1,4 +1,16 @@
+<div class="d-flex justify-content-end mb-3">
+  <input
+    type="text"
+    style="margin: 10px 10px;background-color:  #c3cdd6;"
+    class="form-control w-25"
+    placeholder="Search by Company Code"
+    [(ngModel)]="searchTerm"
+    (input)="onSearch()"
+  />
+</div>
+
 <table class="table table-bordered">
+  <!-- Table header and body as before -->
   <thead>
     <tr>
       <th>SNo</th>
@@ -12,7 +24,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let company of companies; let i = index">
+    <tr *ngFor="let company of filteredCompanies; let i = index">
       <td>{{ i + 1 }}</td>
       <td>{{ company.companyCode }}</td>
       <td>{{ company.companyName }}</td>
@@ -21,14 +33,29 @@
       <td>{{ company.companyWebsite }}</td>
       <td>{{ company.stockExchange }}</td>
       <td>
-        <button class="btn btn-primary btn-sm" (click)="onEdit(company, editModal)">Edit</button>
-        <button class="btn btn-danger btn-sm" (click)="onDelete(company.id)">Delete</button>
+        <button
+          class="btn btn-primary btn-sm custom-3d-btn"
+          (click)="onEdit(company, editModal)"
+        >
+          Update
+        </button>
+        <button
+          class="btn btn-danger btn-sm custom-3d-btn-r"
+          (click)="onDelete(company.id)"
+        >
+          Delete
+        </button>
       </td>
     </tr>
   </tbody>
 </table>
 
 <ng-template #editModal let-modal>
-  <app-company-form *ngIf="selectedCompany" [company]="selectedCompany" (formSubmit)="onFormSubmit($event)">
+  <app-company-form
+    *ngIf="selectedCompany"
+    [isUpdateMode]="true"
+    [company]="selectedCompany"
+    (formSubmit)="onFormSubmit($event)"
+  >
   </app-company-form>
 </ng-template>

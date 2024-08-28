@@ -16,9 +16,10 @@ export class CompanyService {
   }
 
   addCompany(company: Company): Observable<Company> {
-    if (!company.id) {
-      company.id = uuidv4(); // Generate a unique id using uuid
-    }
+   
+    company.id = Math.random().toString(36);
+    console.log(company.id);
+    console.log(company);
     return this.http.post<Company>(this.apiUrl, company);
   }
 
@@ -29,8 +30,5 @@ export class CompanyService {
   deleteCompany(id: string): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
-}
-function uuidv4(): string {
-  throw new Error('Function not implemented.');
 }
 

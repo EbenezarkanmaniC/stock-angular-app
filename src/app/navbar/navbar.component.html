@@ -10,7 +10,6 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
-            <!-- 3D Button -->
             <button class="btn btn-primary dropdown-toggle custom-3d-btn" type="button" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               Stock
             </button>
@@ -19,6 +18,10 @@
               <li><a class="dropdown-item" routerLink="/add-company">Add Company</a></li>
               <li><a class="dropdown-item" routerLink="/about">About</a></li>
             </ul>
+          </li>
+          <!-- Logout Button -->
+          <li class="nav-item">
+            <button class="btn btn-danger custom-3d-btn-r ms-2" style="padding: 10px;" (click)="onLogout()">Logout</button>
           </li>
         </ul>
       </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   title: string = 'Stock Dashboard';  // Default title
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit(): void {
     // Listen to route changes to update the navbar title
@@ -31,5 +32,10 @@ export class NavbarComponent implements OnInit {
     } else {
       this.title = 'Stock Dashboard';
     }
+  }
+
+  onLogout(): void {
+    this.authService.logout();
+    this.router.navigate(['']);  // Redirect to login page after logout
   }
 }

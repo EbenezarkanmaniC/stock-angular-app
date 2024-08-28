@@ -1,0 +1,25 @@
+.full-height {
+    height: 100vh; /* Full window height */
+  }
+  
+  .left-column {
+    background-color: #cf7d84; /* Light red */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-column {
+    background-color: #6fa87c; /* Light green */
+    padding: 20px;
+    color: white; /* Text color for better readability */
+  }
+  
+  .full-height-img {
+    height: 100%; /* Ensures the image is the full height of the container */
+    object-fit: cover; /* Keeps the image proportions intact */
+  }
+  li{
+    font-weight: bolder;
+  }
+  
