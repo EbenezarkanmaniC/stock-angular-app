@@ -1,18 +1,9 @@
 {
   "companies": [
     {
-      "id": "0.3i6zozzkhod",
-      "companyCode": "HDFC243RS49S",
-      "companyName": "HDFC",
-      "companyCeo": "Ramasamy",
-      "companyTurnover": 9000000000,
-      "companyWebsite": "www.hdfc.com",
-      "stockExchange": "NTS"
-    },
-    {
       "id": "0.3v79wpy7fef",
       "companyCode": "HDFC243RS48S",
-      "companyName": "HDFC",
+      "companyName": "ICICI",
       "companyCeo": "Ramasamy",
       "companyTurnover": 875400005,
       "companyWebsite": "www.hdfc.com",
@@ -26,6 +17,51 @@
       "companyTurnover": 74000005633,
       "companyWebsite": "www.nippancompany.com",
       "stockExchange": "ETS"
+    },
+    {
+      "id": "0.wuei1owj6a",
+      "companyCode": "UTN34567WER567",
+      "companyName": "UNO",
+      "companyCeo": "university",
+      "companyTurnover": 9804567230,
+      "companyWebsite": "www.unouniversity.com",
+      "stockExchange": "NTS"
+    },
+    {
+      "id": "0.uaddkra7oza",
+      "companyCode": "UTN34567WER556",
+      "companyName": "UNO",
+      "companyCeo": "university",
+      "companyTurnover": 45620009533455,
+      "companyWebsite": "www.unouniversity.com",
+      "stockExchange": "ETL"
+    },
+    {
+      "id": "0.d654ceryfjf",
+      "companyCode": "HDFC243RS49S",
+      "companyName": "HDFC",
+      "companyCeo": "SundarPichai",
+      "companyTurnover": 983514239930084,
+      "companyWebsite": "www.hdfc.com",
+      "stockExchange": "NTS"
+    },
+    {
+      "id": "0.etwfzvhm1zg",
+      "companyCode": "UTN34567WER568",
+      "companyName": "UNO",
+      "companyCeo": "university",
+      "companyTurnover": 0,
+      "companyWebsite": "www.unicon.com",
+      "stockExchange": "NTS"
+    },
+    {
+      "id": "0.ne4dv8psnir",
+      "companyCode": "NT5623019YTDG",
+      "companyName": "Nippon",
+      "companyCeo": "Ramasamy",
+      "companyTurnover": 9273635241,
+      "companyWebsite": "www.unouniversity.com",
+      "stockExchange": "NTS"
     }
   ]
 }

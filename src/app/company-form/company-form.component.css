@@ -1,5 +1,36 @@
-/* Center the title */
-.card-header.text-center {
+/* Full-width modal */
+.modal-lg {
+    max-width: 100%; /* Full-width modal */
+  }
+  
+  /* Card styling */
+  .card {
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card header */
+  .card-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+  }
+  
+  /* Card body */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* Center the title */
+  .card-header.text-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,12 +38,7 @@
     margin-top: 30px;
   }
   
-  /* Space between buttons */
-  .modal-footer button {
-    margin: 0 10px;
-  }
-  
-  /* 3D Button Style */
+  /* 3D effect for the buttons */
   .custom-3d-btn {
     background-color: #0056b3;
     color: #fff;
@@ -35,25 +61,38 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
   }
-  /* 3D effect for the card */
-.card {
-    border-radius: 12px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+  
+  /* Space between buttons in the modal footer */
+  .modal-footer button {
+    margin: 0 10px;
   }
   
-  .card:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+  /* Form spacing */
+  .form-group {
+    margin-bottom: 1rem;
   }
   
-  .card-header {
-    background-color: #f8f9fa;
-    border-bottom: none;
-    padding: 15px;
-    border-radius: 12px 12px 0 0;
+  /* Remove horizontal padding and margin from form */
+  .form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 0.25rem;
   }
   
-  .card-body {
+  /* Adjust modal content for padding and width */
+  .modal-content {
     padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  /* Remove top margin from modal */
+  .modal-dialog {
+    margin: 0 auto;
+  }
+  
+  /* Remove padding from modal-body */
+  .modal-body {
+    padding: 0;
   }
   

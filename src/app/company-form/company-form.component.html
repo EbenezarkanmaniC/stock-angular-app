@@ -1,40 +1,93 @@
 <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6">
+        <div [ngClass]="formWidth">
         <div class="card">
-            <div class="card-header text-center">
-                <h5 class="modal-title">{{ isUpdateMode ? 'Update Company' : 'Add Company' }}</h5>
-              </div>              
+          <div class="card-header text-center">
+            <h5 class="modal-title">{{ isUpdateMode ? 'Update Company' : 'Add Company' }}</h5>
+          </div>
           <div class="card-body">
             <form (ngSubmit)="onSubmit()" #companyForm="ngForm">
               <div class="form-group mb-3">
                 <label for="companyCode">Company Code</label>
-                <input type="text" class="form-control" id="companyCode" required [(ngModel)]="company.companyCode" name="companyCode" placeholder="Company Code">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="companyCode"
+                  required
+                  [(ngModel)]="company.companyCode"
+                  name="companyCode"
+                />
               </div>
               <div class="form-group mb-3">
                 <label for="companyName">Company Name</label>
-                <input type="text" class="form-control" id="companyName" required [(ngModel)]="company.companyName" name="companyName">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="companyName"
+                  required
+                  [(ngModel)]="company.companyName"
+                  name="companyName"
+                />
               </div>
               <div class="form-group mb-3">
                 <label for="companyCeo">Company CEO</label>
-                <input type="text" class="form-control" id="companyCeo" required [(ngModel)]="company.companyCeo" name="companyCeo">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="companyCeo"
+                  required
+                  [(ngModel)]="company.companyCeo"
+                  name="companyCeo"
+                />
               </div>
               <div class="form-group mb-3">
                 <label for="companyTurnover">Company Turnover</label>
-                <input type="number" class="form-control" id="companyTurnover" required [(ngModel)]="company.companyTurnover" name="companyTurnover">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="companyTurnover"
+                  required
+                  [(ngModel)]="company.companyTurnover"
+                  name="companyTurnover"
+                />
               </div>
               <div class="form-group mb-3">
                 <label for="companyWebsite">Company Website</label>
-                <input type="url" class="form-control" id="companyWebsite" required [(ngModel)]="company.companyWebsite" name="companyWebsite">
+                <input
+                  type="url"
+                  class="form-control"
+                  id="companyWebsite"
+                  required
+                  [(ngModel)]="company.companyWebsite"
+                  name="companyWebsite"
+                />
               </div>
               <div class="form-group mb-4">
                 <label for="stockExchange">Stock Exchange</label>
-                <input type="text" class="form-control" id="stockExchange" required [(ngModel)]="company.stockExchange" name="stockExchange">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="stockExchange"
+                  required
+                  [(ngModel)]="company.stockExchange"
+                  name="stockExchange"
+                />
               </div>
               <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-secondary custom-3d-btn me-3" (click)="onCancel()">Cancel</button>
-                <button type="submit" class="btn btn-primary custom-3d-btn">{{ isUpdateMode ? 'Update' : 'Submit' }}</button>
-              </div>              
+                <button
+                  type="button"
+                  class="btn btn-secondary custom-3d-btn me-3"
+                  (click)="onCancel()"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary custom-3d-btn"
+                >
+                  {{ isUpdateMode ? 'Update' : 'Submit' }}
+                </button>
+              </div>
             </form>
           </div>
         </div>

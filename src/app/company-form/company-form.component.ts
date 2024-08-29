@@ -18,6 +18,7 @@ export class CompanyFormComponent {
     stockExchange: ''
   };
   @Input() isUpdateMode = false;
+  @Input() formWidth = 'col-md-4';
   @Output() formSubmit = new EventEmitter<Company>();
 
 // When opening the form in update mode

@@ -51,11 +51,16 @@
 </table>
 
 <ng-template #editModal let-modal>
-  <app-company-form
-    *ngIf="selectedCompany"
-    [isUpdateMode]="true"
-    [company]="selectedCompany"
-    (formSubmit)="onFormSubmit($event)"
-  >
-  </app-company-form>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <app-company-form
+        *ngIf="selectedCompany"
+        [isUpdateMode]="true"
+        [company]="selectedCompany"
+        [formWidth]="'col-md-12'"
+        (formSubmit)="onFormSubmit($event)"
+      >
+      </app-company-form>
+    </div>
+  </div>
 </ng-template>
